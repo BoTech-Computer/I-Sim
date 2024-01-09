@@ -12,5 +12,7 @@ You are not allowed to publisch or copy the content which is presented in this r
 
 
 **Important this Porject exist since the 20th of December 2023 this means that this project is not yet well developed and can therefore have even bigger issues. Therefore, I do not accept any liability for any damage caused to your computer by my program.**
+
 *Copyright © 2024 All Rights Reserved*
+
 ![Our Logo](CPU-Sim/Logos/BoTechLogoTransparent.png)
