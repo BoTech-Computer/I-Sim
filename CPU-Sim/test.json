@@ -1,0 +1,29 @@
+[
+  {
+    "packagePath": "C:\\ProgramData\\BoTech\\CPU-Sim\\SchematicEditor\\packages\\intern\\InBuiltObjects.dll",
+    "ObjectData": [
+      {
+        "Name": "And",
+        "Description": "Normal And Gate behavior with two inputs.",
+        "ImageSource": null,
+        "cathegory": {
+          "tags": [],
+          "name": "Gates",
+          "description": ""
+        }
+      },
+      {
+        "Name": "Inverter",
+        "Description": "Normal Inverter behavior.",
+        "ImageSource": null,
+        "cathegory": {
+          "tags": [],
+          "name": "Gates",
+          "description": ""
+        }
+      }
+    ],
+    "packageName": "InBuild",
+    "Author": "BoTech-Dervcelopment"
+  }
+]

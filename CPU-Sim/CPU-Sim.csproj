@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>CPU_Sim</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Logos\ToggleOnRight.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Logos\ToggleOnRight.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Settings\" />
+    <Folder Include="Simulation\" />
+    <Folder Include="View\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+</Project>

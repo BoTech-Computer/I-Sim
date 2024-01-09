@@ -1,0 +1,110 @@
+﻿<Window x:Class="CPU_Sim.SchematicEditor.View.SchematicEditor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CPU_Sim"
+        mc:Ignorable="d"
+        Title="SchematicEditor" Height="450" Width="800" Loaded="Window_Loaded" SizeChanged="Window_SizeChanged" MouseWheel="Window_MouseWheel">
+    <Grid x:Name="MainView">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid x:Name="UpperToolBars">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Menu x:Name="SettingsMenu" HorizontalAlignment="Left" VerticalAlignment="Top" MaxHeight="24" Background="LightGray">
+                <MenuItem Header="File" FontSize="14" Background="#FFFBFBFB" BorderBrush="#FF676767">
+                    <MenuItem Header="New">
+                        <MenuItem x:Name="NewProjectMenuBTN" Header="Project" Click="NewProjectMenuBTN_Click"/>
+                        <MenuItem x:Name="NewSchematicMenuBTN" Header="Schematic" Click="NewSchematicMenuBTN_Click"/>
+                        <MenuItem x:Name="NewSimulationMenuBTN" Header="Simulation" Click="NewSimulationMenuBTN_Click"/>
+                    </MenuItem>
+                    <MenuItem Header="Add">
+                        <MenuItem x:Name="AddProjectMenuBTN" Header="Project" Click="AddProjectMenuBTN_Click"/>
+                        <MenuItem x:Name="AddSchematicMenuBTN" Header="Schematic" Click="AddSchematicMenuBTN_Click"/>
+                        <MenuItem x:Name="AddSimSettingsMenuBTN" Header="Simulation Settings" Click="AddSimSettingsMenuBTN_Click"/>
+                        <MenuItem x:Name="AddSubSchematicMenuBTN" Header="Hierarchical Schematic" Click="AddSubSchematicMenuBTN_Click"/>
+                        <MenuItem x:Name="NewObjectMenuBTN" Header="Object" Click="NewObjectMenuBTN_Click"/>
+                    </MenuItem>
+                    <MenuItem  x:Name="OpenMenuBTN" Header="Open" Click="OpenMenuBTN_Click"/>
+                    <MenuItem Header="Recent">
+                        <MenuItem x:Name="RecentMenuBTN" Header="No Recent Files/Projects..."/>
+                    </MenuItem>
+                    <MenuItem x:Name="SaveMenuBTN" Header="Save" Click="SaveMenuBTN_Click"/>
+                    <MenuItem x:Name="SaveAsMenuBTN" Header="Save As" Click="SaveAsMenuBTN_Click"/>
+                    <MenuItem x:Name="CloseMenuBTN" Header="Close" Click="CloseMenuBTN_Click"/>
+                </MenuItem>
+                <MenuItem Header="Project" FontSize="14" Background="#FFFBFBFB" BorderBrush="#FF676767">
+
+                </MenuItem>
+                <MenuItem Header="View" FontSize="14" Background="#FFFBFBFB" BorderBrush="#FF676767">
+
+                </MenuItem>
+                <MenuItem Header="Extensions" FontSize="14" Background="#FFFBFBFB" BorderBrush="#FF676767">
+                    <MenuItem Header="Manage Extensions"/>
+                </MenuItem>
+                <MenuItem Header="Help" FontSize="14" Background="#FFFBFBFB" BorderBrush="#FF676767">
+                    <MenuItem Header="view main BoTech Help-Page"/>
+                    <MenuItem Header="First Steps"/>
+                    <MenuItem Header="Tips And Tricks"/>
+                    <MenuItem Header="Goto Product Intrucution PDF"/>
+                    <MenuItem Header="Send Feedback or Error"/>
+                </MenuItem>
+            </Menu>
+
+            <ToolBar x:Name="MainToolBar" Grid.Row="1">
+                <ToolBar.Items>
+                    <Label Content="Auto Save:"/>
+                    <Button x:Name="AutoSave">
+                        <!--  <Button.Background> -->
+                        <!--  <ImageBrush ImageSource="Logos/ToggleOnRight.png" Stretch="Uniform"/>-->
+                        <!-- </Button.Background> -->
+                    </Button>
+                </ToolBar.Items>
+            </ToolBar>
+        </Grid>
+        <Grid x:Name="MainContentAndSidePanels" Grid.Row="1" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <ToolBarTray Orientation="Vertical">
+                <ToolBar x:Name="AsideToolBarLeft">
+                    <Button x:Name="GroupAsideBTN" Content="G" FontSize="16"></Button>
+                    <Button x:Name="HierarchicalMoveDownBTN" Content="H.D."></Button>
+                    <Button x:Name="HierarchicalMoveUPBTN" Content="H.U."></Button>
+                </ToolBar>
+            </ToolBarTray>
+            <Canvas x:Name="Surface" Grid.Column="1" MouseEnter="Surface_MouseEnter" MouseMove="Surface_MouseMove" MouseDown="Surface_MouseDown"/>
+            <ToolBarTray Orientation="Vertical" Grid.Column="2">
+                <ToolBar x:Name="AsideToolBarRight" Grid.Column="2">
+                    <Button x:Name="NewObjectBTN"  Content="NEW" Click="NewObjectBTN_Click"></Button>
+                </ToolBar>
+            </ToolBarTray>
+        </Grid>
+        <StatusBar Grid.Row="2">
+            <StatusBarItem>
+                <Label x:Name="MainStatusLBL" Content="Please wait initialisation..."/>
+            </StatusBarItem>
+            <StatusBarItem>
+                <ProgressBar x:Name="MainProgress" MinHeight="24" Width="100"/>
+            </StatusBarItem>
+            <StatusBarItem>
+                <Label x:Name="SufaceCursorData" HorizontalAlignment="Right"/>
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
+</Window>
