@@ -1,4 +1,4 @@
-
+<html>
 <style>
       .container {
         display: flex;
@@ -26,7 +26,7 @@
       </div>
     </div>
   </body>
-
+</html>
 
 Hi! In this responsety you can find the source code of our Schematic Simulator.
 # Table of Contents
