@@ -22,6 +22,7 @@
         <img src="CPU-Sim/Logos/ISimTransparent.png" width="240" style="border: 2px solid gray; border-radius: 6px;">
       </div>
       <div class="text">
+        <h1>This Repo is Obsolete and will no longer maintained! Use this new repo instead: <a href="https://www.github.com/BoTech-Development/ISim"> click here</a></h1>
         <h1>Welcome to I-Sim!</h1>
       </div>
     </div>
@@ -70,7 +71,7 @@ You are not allowed to publisch or copy the content which is presented in this r
       </div>
       <div class="text">
         <h6 style="text-align: center; ">Powered By:</h6>
-        <a href="https://www.botech-computer.de/"><img src="CPU-Sim/Logos/BoTechLogoTransparent.png" alt="BoTechLogo" width="180"  style="display: block; margin-left: auto; margin-right: auto;border: 2px solid gray; border-radius: 6px;"></a>
+        <a href="https://www.botech-computer.de/"><img src="www.bitech-computer.de/Assets/Logos/BoTechLogoNew.png" alt="BoTechLogo" width="180"  style="display: block; margin-left: auto; margin-right: auto;border: 2px solid gray; border-radius: 6px;"></a>
       </div>
     </div>
   </body>
