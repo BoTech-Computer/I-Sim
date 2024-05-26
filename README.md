@@ -63,7 +63,7 @@ You are not allowed to publisch or copy the content which is presented in this r
 **Important this Porject exist since the 20th of December 2023 this means that this project is not yet well developed and can therefore have even bigger issues. Therefore, I do not accept any liability for any damage caused to your computer by my program.**
 
 *Copyright © 2024 BoTech-Computer All Rights Reserved*
-
+<html>
   <body>
     <div class="container">
       <div class="image">
@@ -75,4 +75,5 @@ You are not allowed to publisch or copy the content which is presented in this r
       </div>
     </div>
   </body>
+  </html>
 ![Our Logo](https://www.botech-computer.de/Assets/Logos/BoTechLogoNew.png)
