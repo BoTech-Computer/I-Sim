@@ -71,7 +71,7 @@ You are not allowed to publisch or copy the content which is presented in this r
       </div>
       <div class="text">
         <h6 style="text-align: center; ">Powered By:</h6>
-        <a href="https://www.botech-computer.de/"><img src="www.bitech-computer.de/Assets/Logos/BoTechLogoNew.png" alt="BoTechLogo" width="180"  style="display: block; margin-left: auto; margin-right: auto;border: 2px solid gray; border-radius: 6px;"></a>
+        <a href="https://www.botech-computer.de/"><img src="www.botech-computer.de/Assets/Logos/BoTechLogoNew.png" alt="BoTechLogo" width="180"  style="display: block; margin-left: auto; margin-right: auto;border: 2px solid gray; border-radius: 6px;"></a>
       </div>
     </div>
   </body>
